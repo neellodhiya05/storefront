@@ -11,6 +11,7 @@ import { StateService } from '../../providers/state/state.service';
 
 import { ADD_TO_CART, GET_PRODUCT_DETAIL } from './product-detail.graphql';
 
+import { Router } from '@angular/router';
 @Component({
     selector: 'vsf-product-detail',
     templateUrl: './product-detail.component.html',
@@ -29,6 +30,7 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
 
     constructor(private dataService: DataService,
                 private stateService: StateService,
+                private router: Router,
                 private notificationService: NotificationService,
                 private route: ActivatedRoute) {
     }
@@ -66,6 +68,10 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
             this.sub.unsubscribe();
         }
     }
+
+    btnClick=  () => {
+        this.router.navigateByUrl('/prescription');
+};
 
     addToCart(variant: GetProductDetail.Variants, qty: number) {
         this.dataService.mutate<AddToCart.Mutation, AddToCart.Variables>(ADD_TO_CART, {
@@ -123,5 +129,5 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
             return 0;
         })[0];
     }
-
+  
 }

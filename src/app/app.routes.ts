@@ -1,4 +1,5 @@
 import { Route } from '@angular/router';
+import { PrescriptionComponent } from './core/components/prescription/prescription.component';
 
 import { ProductDetailComponent } from './core/components/product-detail/product-detail.component';
 import { ProductListComponent } from './core/components/product-list/product-list.component';
@@ -24,5 +25,9 @@ export const routes: Route[] = [
     {
         path: 'checkout',
         loadChildren: () => import('./checkout/checkout.module').then(m => m.CheckoutModule),
+    },
+    {
+        path: 'prescription',
+        component: PrescriptionComponent,
     },
 ];

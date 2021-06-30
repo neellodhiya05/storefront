@@ -29,6 +29,8 @@
                             <input type="number" min="0" max="99" placeholder="Qty" [(ngModel)]="qty"
                                    class="form-control form-control-lg">
                         </div>
+                        <button class="btn btn-success btn-lg" (click)="btnClick();">Add Lense</button>
+                        
                         <button [disabled]="qty === 0"
                                 class="btn btn-primary btn-lg"
                                 (click)="addToCart(selectedVariant, qty)">Add to cart
