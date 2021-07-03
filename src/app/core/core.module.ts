@@ -31,6 +31,8 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { ProductSearchBarComponent } from './components/product-search-bar/product-search-bar.component';
 import { buildIconLibrary } from './icon-library';
 import { DefaultInterceptor } from './providers/data/interceptor';
+import { VisonTypeComponent } from './vison-type/vison-type.component';
+import { LensCategoryComponent } from './components/lens-category/lens-category.component';
 
 
 
@@ -60,6 +62,8 @@ let providedCacheState: any | undefined;
 @NgModule({
     declarations: [
         ...CORE_COMPONENTS,
+        VisonTypeComponent,
+        LensCategoryComponent,
     
     ],
     imports: [

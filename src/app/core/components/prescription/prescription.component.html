@@ -1,201 +1,107 @@
-<app-my-stepper #cdkStepper [linear]="isLinear">
-  <cdk-step label="Personal Details" [editable]="isEditable" [stepControl]="frmDetails" [optional]="false">
-    <ng-template cdkStepLabel>
-      <span class="icon is-medium">
-        <fa-icon></fa-icon>
-      </span>
-      <span>Personal Details</span>
-    </ng-template>
-    <form (ngSubmit)="frmSubmit(frmDetails)" [formGroup]="frmDetails">
-      <div class="container">
-        <div class="field is-horizontal">
-          <div class="field-body">
-            <div class="field">
-              <label class="label">First Name</label>
-              <p class="control is-expanded has-icons-right">
-                <input formControlName="firstName" class="input" type="text" placeholder="First Name">
-                <span class="icon is-small is-right">
-                  <i class="fas fa-check"></i>
-                </span>
-              </p>
-            </div>
-            <div class="field">
-              <label class="label">Last Name</label>
-              <p class="control is-expanded has-icons-right">
-                <input formControlName="lastName" class="input" type="text" placeholder="Last Name">
-                <span class="icon is-small is-right">
-                  <i class="fas fa-check"></i>
-                </span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="field">
-          <label class="label">Email Address</label>
-          <div class="control has-icons-right">
-            <input formControlName="email" class="input" type="text" placeholder="Text input">
-            <span class="icon is-small is-right">
-              <i class="fas fa-check"></i>
-            </span>
-          </div>
-        </div>
-        <footer class="my-footer">
-          <div class="buttons">
-            <button [disabled]="frmDetails.invalid" class="button is-outline is-primary" cdkStepperNext>
-              <span> Next</span>
-              <span class="icon medium">
-                <fa-icon [icon]="faChevronRight" size="fa-lg"> </fa-icon>
-              </span>
-            </button>
-          </div>
-        </footer>
+<main>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Step 1</h1>
+        <h2 class="fw-light">Vison Type</h2>
+        <p class="lead text-muted">How you will use your glasses? Select one option</p>
+       
       </div>
+    </div>
+  </section>
 
-    </form>
-  </cdk-step>
+  <div class="album py-5 bg-light">
+    <div class="container">
 
-  <cdk-step [editable]="isEditable" [stepControl]="frmAddress">
-    <!-- using template -->
-    <ng-template cdkStepLabel>
-      <span class="icon is-medium">
-        <fa-icon></fa-icon>
-      </span>
-      <span>Address</span>
-    </ng-template>
-    <form (ngSubmit)="frmSubmit(frmDetails)" [formGroup]="frmAddress">
-      <div class="container">
-        <div class="field">
-          <label class="label">Address One</label>
-          <p class="control is-expanded has-icons-right">
-            <input formControlName="addressOne" class="input" type="text" placeholder="Address One">
-            <span class="icon is-small is-right">
-              <i class="fas fa-check"></i>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="assets/distance.png" routerLink="../lens-category">
+            <div class="card-body">
+            <h1 class="option-value" routerLink="../lens-category"> Distance</h1>
+            <span class="option-price">
+              <a routerLink="../lens-category" >FREE</a>
             </span>
-          </p>
-        </div>
-        <div class="field">
-          <label class="label">Address Two</label>
-          <p class="control is-expanded has-icons-right">
-            <input formControlName="addressTwo" class="input" type="text" placeholder="Address Two">
-            <span class="icon is-small is-right">
-              <i class="fas fa-check"></i>
-            </span>
-          </p>
-        </div>
-        <div class="field">
-          <label class="label">City</label>
-          <p class="control is-expanded has-icons-right">
-            <input formControlName="city" class="input" type="text" placeholder="City">
-            <span class="icon is-small is-right">
-              <i class="fas fa-check"></i>
-            </span>
-          </p>
-        </div>
-
-        <div class="field">
-          <label class="label">County/State/Region</label>
-          <div class="control has-icons-right">
-            <input formControlName="county" class="input" type="text" placeholder="County/State">
-            <span class="icon is-small is-right">
-              <i class="fas fa-check"></i>
-            </span>
-          </div>
-        </div>
-        <div class="field">
-          <label class="label">Country</label>
-          <div class="control has-icons-right">
-            <input formControlName="country" class="input" type="text" placeholder="Country">
-            <span class="icon is-small is-right">
-              <i class="fas fa-check"></i>
-            </span>
-          </div>
-        </div>
-        <footer class="my-footer">
-          <div class="buttons">
-            <button [disabled]="!isEditable" type="button" class="button is-outline is-warning" cdkStepperPrevious>
-              <span class="icon medium">
-                <fa-icon [icon]="faChevronLeft"> </fa-icon>
-              </span>
-              <span> Previous</span>
-            </button>
-
-            <button [disabled]="frmAddress.invalid" type="button" class="button is-outline is-primary" cdkStepperNext>
-              <span> Next</span>
-              <span class="icon medium">
-                <fa-icon [icon]="faChevronRight" size="fa-lg"> </fa-icon>
-              </span>
-            </button>
-          </div>
-        </footer>
-      </div>
-    </form>
-  </cdk-step>
-  <cdk-step [editable]="isEditable" [stepControl]="frmPayment">
-    <ng-template cdkStepLabel>
-      <span class="icon is-medium">
-        <fa-icon [icon]="" size="fa-lg"></fa-icon>
-      </span>
-      <span>Payment Information</span>
-    </ng-template>
-    <form (ngSubmit)="frmSubmit(frmDetails)" [formGroup]="frmPayment">
-      <div class="container">
-        <div class="field is-horizontal">
-          <div class="field-body">
-            <div class="field">
-              <label class="label">Credit Card Number</label>
-              <p class="control is-expanded has-icons-right">
-                <input formControlName="creditCardNo" class="input" type="text" placeholder="Credit Card No.">
-                <span class="icon is-small is-right">
-                  <i class="fas fa-check"></i>
-                </span>
-              </p>
-            </div>
-            <div class="field">
-              <label class="label">Expiry</label>
-              <p class="control is-expanded has-icons-right">
-                <input formControlName="expiryDate" class="input" type="text" placeholder="10/2020">
-                <span class="icon is-small is-right">
-                  <i class="fas fa-check"></i>
-                </span>
-              </p>
+              <div class="option-description"><p>You mostly need glasses to see things in the distance, e.g. whilst driving.</p></div>
+              <div class="d-flex justify-content-between align-items-center">
+                
+              </div>
             </div>
           </div>
         </div>
-        <div class="field">
-          <label class="label">CVV Code</label>
-          <div class="control has-icons-right">
-            <input formControlName="cvvCode" class="input" type="number" placeholder="CVV Code">
-            <span class="icon is-small is-right">
-              <i class="fas fa-check"></i>
+        <div class="col">
+          <div class="card shadow-sm">
+             <img src="assets/reading.png" routerLink="../lens-category" >
+
+            <div class="card-body">
+                <h1 class="option-value" routerLink="../lens-category"> Reading</h1>
+            <span class="option-price">
+              <a routerLink="../lens-category" >FREE</a>
             </span>
+            <div class="option-description"><p>You mostly need glasses to see things up close, e.g. papers, documents, etc.</p></div>
+              <div class="d-flex justify-content-between align-items-center">
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+          <img src="assets/computer.png" routerLink="../lens-category">
+
+            <div class="card-body">
+                <h1 class="option-value" routerLink="../lens-category">Computer</h1>
+            <span class="option-price">
+              <a routerLink="../lens-category" >FREE</a>
+            </span>
+            <div class="option-description"><p>You need glasses when using a computer or anything else at arm's length.</p></div>
+              <div class="d-flex justify-content-between align-items-center">
+             
+              </div>
+            </div>
           </div>
         </div>
 
-        <footer class="my-footer">
-          <div class="buttons">
-            <button [disabled]="!isEditable" type="button" class="button is-outline is-warning" cdkStepperPrevious>
-              <span class="icon medium">
-                <fa-icon [icon]="faChevronLeft"> </fa-icon>
-              </span>
-              <span> Previous</span>
-            </button>
+        <div class="col">
+          <div class="card shadow-sm">
+             <img src="assets/bifocal.jpg" routerLink="../lens-category">
 
-            <button type="button" class="button is-outline is-danger" (click)="cdkStepper.reset()">
-              <span class="icon medium">
-                <fa-icon [icon]="faBan"> </fa-icon>
-              </span>
-              <span>Reset</span>
-            </button>
-
-            <button type="submit" [disabled]="frmPayment.invalid" class="button is-outline is-primary">
-              <span class="icon medium">
-                <fa-icon [icon]="faSave" size="fa-lg"> </fa-icon>
-              </span>
-              <span>Save</span>
-            </button>
+            <div class="card-body">
+             <h1 class="option-value" routerLink="../lens-category">Bifocal</h1>
+            <span class="option-price">
+              <a routerLink="../lens-category" >FREE</a>
+            </span>
+            <div class="option-description"><p>You need glasses to see things up close and in the distance.Bifocal lenses have a visible line separating the near and far distance viewing areas.</p></div>
+              <div class="d-flex justify-content-between align-items-center">
+               
+              </div>
+            </div>
           </div>
-        </footer>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="assets/verifocal.jpg" routerLink="../lens-category">
+
+            <div class="card-body">
+              <h1 class="option-value" routerLink="../lens-category">Varifocal</h1>
+            <span class="option-price">
+              <a routerLink="../lens-category" >FREE</a>
+            </span>
+          <div class="option-description"><p>You need glasses to see things up close and in the distance.
+Varifocal lenses offer a smooth, continuous vision from distance to intermediate to near vision.</p></div>
+              <div class="d-flex justify-content-between align-items-center">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+      
+      
       </div>
-    </form>
-  </cdk-step>
-</app-my-stepper>
+    </div>
+  </div>
+
+</main>
