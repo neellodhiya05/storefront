@@ -31,7 +31,8 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { ProductSearchBarComponent } from './components/product-search-bar/product-search-bar.component';
 import { buildIconLibrary } from './icon-library';
 import { DefaultInterceptor } from './providers/data/interceptor';
-import { PrescriptionComponent } from './components/prescription/prescription.component';
+
+
 
 const CORE_COMPONENTS = [
     ProductListComponent,
@@ -50,6 +51,7 @@ const CORE_COMPONENTS = [
     ProductListControlsComponent,
     ProductSearchBarComponent,
     AssetGalleryComponent,
+   
 ];
 
 let apolloCache: InMemoryCache;
@@ -58,7 +60,7 @@ let providedCacheState: any | undefined;
 @NgModule({
     declarations: [
         ...CORE_COMPONENTS,
-        PrescriptionComponent,
+    
     ],
     imports: [
         HttpClientModule,

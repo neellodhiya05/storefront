@@ -2,7 +2,7 @@
   <cdk-step label="Personal Details" [editable]="isEditable" [stepControl]="frmDetails" [optional]="false">
     <ng-template cdkStepLabel>
       <span class="icon is-medium">
-        <fa-icon></fa-icon>
+        <fa-icon [icon]="faPerson" size="fa-lg"></fa-icon>
       </span>
       <span>Personal Details</span>
     </ng-template>
@@ -53,12 +53,11 @@
 
     </form>
   </cdk-step>
-
   <cdk-step [editable]="isEditable" [stepControl]="frmAddress">
     <!-- using template -->
     <ng-template cdkStepLabel>
       <span class="icon is-medium">
-        <fa-icon></fa-icon>
+        <fa-icon [icon]="faAddressBook" size="fa-lg"></fa-icon>
       </span>
       <span>Address</span>
     </ng-template>
@@ -133,7 +132,7 @@
   <cdk-step [editable]="isEditable" [stepControl]="frmPayment">
     <ng-template cdkStepLabel>
       <span class="icon is-medium">
-        <fa-icon [icon]="" size="fa-lg"></fa-icon>
+        <fa-icon [icon]="faCreditCard" size="fa-lg"></fa-icon>
       </span>
       <span>Payment Information</span>
     </ng-template>

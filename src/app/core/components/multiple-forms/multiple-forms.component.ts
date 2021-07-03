@@ -10,17 +10,12 @@ import {
   faBan,
 } from '@fortawesome/free-solid-svg-icons';
 
-
-
 @Component({
-  selector: 'vsf-prescription',
-  templateUrl: './prescription.component.html',
-  styleUrls: ['./prescription.component.scss'],
-  
- 
+  selector: 'app-multiple-forms',
+  templateUrl: './multiple-forms.component.html',
+  styleUrls: ['./multiple-forms.component.scss'],
 })
-
-export class PrescriptionComponent implements OnInit {
+export class MultipleFormsComponent implements OnInit {
   @Input()
   isLinear = true;
 
