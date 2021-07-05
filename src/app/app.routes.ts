@@ -1,5 +1,8 @@
 import { Route } from '@angular/router';
+import { AddPrescriptionFormComponent } from './core/components/add-prescription-form/add-prescription-form.component';
+import { AddPrescriptionComponent } from './core/components/add-prescription/add-prescription.component';
 import { LensCategoryComponent } from './core/components/lens-category/lens-category.component';
+import { LensPackageComponent } from './core/components/lens-package/lens-package.component';
 import { PrescriptionComponent } from './core/components/prescription/prescription.component';
 
 import { ProductDetailComponent } from './core/components/product-detail/product-detail.component';
@@ -39,5 +42,17 @@ export const routes: Route[] = [
     {
         path: 'lens-category',
         component:LensCategoryComponent,
+    },
+    {
+        path: 'lens-package',
+        component:LensPackageComponent,
+    },
+    {
+        path: 'add-prescription',
+        component:AddPrescriptionComponent,
+    },
+    {
+        path: 'add-prescription-form',
+        component:AddPrescriptionFormComponent,
     },
 ];

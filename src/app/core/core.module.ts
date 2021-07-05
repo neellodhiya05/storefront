@@ -33,6 +33,9 @@ import { buildIconLibrary } from './icon-library';
 import { DefaultInterceptor } from './providers/data/interceptor';
 import { VisonTypeComponent } from './vison-type/vison-type.component';
 import { LensCategoryComponent } from './components/lens-category/lens-category.component';
+import { LensPackageComponent } from './components/lens-package/lens-package.component';
+import { AddPrescriptionComponent } from './components/add-prescription/add-prescription.component';
+import { AddPrescriptionFormComponent } from './components/add-prescription-form/add-prescription-form.component';
 
 
 
@@ -64,6 +67,9 @@ let providedCacheState: any | undefined;
         ...CORE_COMPONENTS,
         VisonTypeComponent,
         LensCategoryComponent,
+        LensPackageComponent,
+        AddPrescriptionComponent,
+        AddPrescriptionFormComponent,
     
     ],
     imports: [

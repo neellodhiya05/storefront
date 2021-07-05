@@ -1,0 +1,143 @@
+
+    <div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="heading" >Enter new prescription</div>
+                <p class="heading2">Enter your prescription below</p>
+                <p style="color:red">All prescriptions will be checked by one of our opticians and verified for any potential errors or delays,and they may contact you if they need to discuss your details any further.
+            </p>
+            <form [formGroup]="form" (submit)="submit()"> 
+                <label class="name">Prescription Name:</label><br>
+                <input type="text" id="pre_name" name="pre_name" class="form-control" formControlName="pre_name"><br> 
+                <hr>
+                <div class="row">
+                    <div class="col" style="font-size:20px">Right Eye</div>
+                    <div class="col">  </div>
+                    <div class="col" style="font-size:20px">Left Eye</div>
+                </div>
+                <hr>
+                 <div class="row">
+                     <div class="col" style="font-size:calc(1em + 1vw)">Sphere(SPH)</div>
+                     <div class="col">  </div>
+                     <div class="col"style="font-size:calc(1em + 1vw)">Sphere(SPH)</div>
+                </div>
+
+                  <div class="row">
+                     <div class="col" style="font-size:calc(1em + 1vw)">
+                        <select formControlName="right_sphere">
+                          
+                        </select>
+                     </div>
+                     <div class="col">  </div>
+                     <div class="col"style="font-size:calc(1em + 1vw)">
+                        <select formControlName="left_sphere">
+                          
+                        </select>
+                     </div>
+                </div>
+                
+            
+             <hr>
+
+
+               <div class="row">
+                     <div class="col" style="font-size:calc(1em + 1vw)">Cylinder(CYL)</div>
+                     <div class="col">  </div>
+                     <div class="col"style="font-size:calc(1em + 1vw)">Cylinder(CYL)</div>
+                </div>
+                
+                <div class="row">
+                     <div class="col" style="font-size:calc(1em + 1vw)">
+                            <select formControlName="right_cylinder">
+                           
+                        </select>
+                     </div>
+                     <div class="col">  </div>
+                     <div class="col"style="font-size:calc(1em + 1vw)">
+                         <select formControlName="left_cylinder">
+                           
+                        </select>
+                     </div>
+                </div>
+             
+             <hr>
+
+            <div class="row">
+                 <div class="col" style="font-size:calc(1em + 1vw)" >Axis</div>
+                 <div class="col">  </div>
+                <div class="col"style="font-size:calc(1em + 1vw)">Axis</div>
+             </div>
+           
+            <div class="row">
+                <div class="col" >
+                <input type="number" id="axis" name="axis" formControlName="right_axis">
+                </div>
+                <div class="col">  </div>
+                <div class="col" >
+                <input type="number" id="leftaxis" name="leftaxis" formControlName="left_axis"> 
+                </div>
+             </div>
+            <hr>
+               <div class="row">
+                     <div class="col" style="font-size:calc(1em + 1vw)">NEAR ADD</div>
+                     <div class="col">  </div>
+                     <div class="col"style="font-size:calc(1em + 1vw)">NEAR ADD</div>
+                </div>
+                <div class="row">
+                     <div class="col" style="font-size:calc(1em + 1vw)">
+                         <select formControlName="right_nearadd">
+                            
+                        </select>
+                    </div>
+                     <div class="col">  </div>
+                     <div class="col"style="font-size:calc(1em + 1vw)">
+                        <select formControlName="left_nearadd">
+                           
+                        </select>
+                     </div>
+                </div>
+            
+             <hr>
+
+               <div class="row">
+                <div class="col">
+                <label class="name">Pupil Prescription</label>
+                </div>
+                <div class="col"></div>
+                <div class="col">
+                     <select formControlName="pupil_pre">
+                          
+                        </select>
+                </div>
+             </div>
+             <div>
+                    <span >The distance between your pupils, select "Average / Don't Know" if you are unsure and we'll be in touch if necessary<p>For prescriptions with a Sphere value stronger than +/- 8, we may still be able to supply your glasses. Please  call us on 01793 746601 to discuss your options.</p></span>
+                </div>
+             <hr>
+
+                <div class="row">
+                 <div class="col">
+                     <label class="name">Extra Information:</label>
+                 </div>
+                <div class="col"></div>
+                 <div class="col">
+                    <input  id="extrainfo"  type="text-area"  formControlName="extra_info">
+                  </div>
+             </div>
+             <hr>
+
+              <input type="checkbox" required />
+            <label >
+                I confirm that I've read and agree to the Terms and Conditions I certify that the wearer is over 16 years old and that they are not registered blind or partially sighted. I also confirm that the prescription details above have been entered correctly and I am happy that no errors have been made.
+            </label>    
+            <hr>
+          
+            <div class="heading" >
+                 <button class="btn-btn sucess" type="submit">Add Prescription</button>
+            </div>
+            <hr>
+            </form>
+        </div>
+    </div>
+</div>
+   
