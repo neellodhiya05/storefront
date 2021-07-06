@@ -1,8 +1,8 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
-import { CdkStepper } from '@angular/cdk/stepper';
-import { Directionality } from '@angular/cdk/bidi';
+
+
 @Component({
   selector: 'vsf-add-prescription-form',
   templateUrl: './add-prescription-form.component.html',

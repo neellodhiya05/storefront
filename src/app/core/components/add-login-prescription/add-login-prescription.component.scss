@@ -1,0 +1,40 @@
+.row{
+    border: 2px ;
+    background: lightgray;
+  }
+  .heading{ 
+    color: black;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 30px;
+
+  }
+  .heading2{
+      text-align: center;
+      color: red;
+  }
+  input[type=email]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  input[type=password]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  #select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}

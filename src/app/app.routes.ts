@@ -1,4 +1,5 @@
 import { Route } from '@angular/router';
+import { AddLoginPrescriptionComponent } from './core/components/add-login-prescription/add-login-prescription.component';
 import { AddPrescriptionFormComponent } from './core/components/add-prescription-form/add-prescription-form.component';
 import { AddPrescriptionComponent } from './core/components/add-prescription/add-prescription.component';
 import { LensCategoryComponent } from './core/components/lens-category/lens-category.component';
@@ -54,5 +55,9 @@ export const routes: Route[] = [
     {
         path: 'add-prescription-form',
         component:AddPrescriptionFormComponent,
+    },
+    {
+        path: 'add-login-prescription',
+        component:AddLoginPrescriptionComponent,
     },
 ];
