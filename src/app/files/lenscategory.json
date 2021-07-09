@@ -1,0 +1,39 @@
+[
+    {
+        "id":1,
+        "name":"Clear",
+        "prize":"Free",
+        "description":"Transperent lens for everyday use.",  
+        "image": "assets/clear.png",
+        "parent": 0,
+        "haschild": 0
+    },
+    {
+        "id":2,
+        "name":"Blue Light Lens",
+        "prize":"From £40.00",
+        "description":" These lenses use a special protective shield that helps filter out blue light from screens. They also reduce glare and offer greater visual comfort.",  
+        "image": "assets/bluelight.png",
+        "parent": 0,
+        "haschild": 1
+    },
+    {
+        "id":3,
+        "name":"Sunglasses",
+        "prize":"From £10.00",
+        "description":"Choose from dark, gradient, or polarised tints, all with 100% UVA/B protection.",
+        "image": "assets/sunglasses.png",
+        "parent": 0,
+        "haschild":2
+
+    },
+    {
+        "id":4,
+        "name":"Transition Light Intelligent Lenses",
+        "prize":"From £55.00",
+        "description":" Transitions Light Intelligent Lenses adapt to changing light conditions, going from clear indoors to dark outdoors. They block 100% of UV rays and help protect against harmful blue light. Select from a range of Transitions lenses.",  
+        "image": "assets/teansition.png",
+        "parent": 0,
+        "haschild": 3
+    }
+]

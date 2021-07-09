@@ -3,9 +3,9 @@
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Step 1</h1>
-        <h2 class="fw-light">Vison Type</h2>
-        <p class="lead text-muted">How you will use your glasses? Select one option</p>
+        <h1 class="fw-light">Step 2</h1>
+        <h2 class="fw-light">Lens Category</h2>
+        <p class="lead text-muted">Select the option below:</p>
        
       </div>
     </div>
@@ -16,7 +16,7 @@
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         
-        <div class="col" *ngFor="let items of visontypedetail">
+        <div class="col" *ngFor="let items of lenscategorydetail">
          <div *ngIf="(items.parent == 0)">
           <div class="card shadow-sm" >
             <img src={{items.image}} >
@@ -25,14 +25,24 @@
                 {{items.name}}
             </h1>
             <span class="option-price">
-              <div *ngIf="(items.haschild == false)">
-              <a routerLink="../lens-category">
+              <div *ngIf="(items.haschild == 0)">
+              <a routerLink="../lens-package">
                 {{items.prize}}
               </a>
               </div>
-              <div *ngIf="(items.haschild == true)">
+              <div *ngIf="(items.haschild == 1)">
                 <!-- Show hidden Child elements of the same parent id on the top of the component in a div-->
-                <a href="../verifocal-card">{{items.prize}}</a>
+                <a href="../bluelight-card">{{items.prize}}</a>
+                <!--- -->
+              </div>
+                <div *ngIf="(items.haschild == 2)">
+                <!-- Show hidden Child elements of the same parent id on the top of the component in a div-->
+                <a href="../sunglasses-card">{{items.prize}}</a>
+                <!--- -->
+              </div>
+                <div *ngIf="(items.haschild == 3)">
+                <!-- Show hidden Child elements of the same parent id on the top of the component in a div-->
+                <a href="../transition-card">{{items.prize}}</a>
                 <!--- -->
               </div>
             </span>

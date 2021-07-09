@@ -1,0 +1,67 @@
+[
+    {
+        "id":1,
+        "name":"Distance",
+        "prize":"Free",
+        "description":"You mostly need glasses to see things in the distance, e.g. whilst driving.",  
+        "image": "assets/distance.png",
+        "parent": 0,
+        "haschild": false
+    },
+    {
+        "id":2,
+        "name":"Reading",
+        "prize":"Free",
+        "description":"You mostly need glasses to see things up close, e.g. papers, documents, etc.",  
+        "image": "assets/reading.png",
+        "parent": 0,
+        "haschild": false
+    },
+    {
+        "id":3,
+        "name":"Computer",
+        "prize":"Free",
+        "description":"You need glasses when using a computer or anything else at arm's length.",
+        "image": "assets/computer.png",
+        "parent": 0,
+        "haschild": false
+
+    },
+    {
+        "id":4,
+        "name":"BiFocal",
+        "prize":"£39.00",
+        "description":"You need glasses to see things up close and in the distance.  Bifocal lenses have a visible line separating the near and far distance viewing areas.</p>",  
+        "image": "assets/bifocal.jpg",
+        "parent": 0,
+        "haschild": false
+
+    },
+    {
+        "id":5,
+        "name":"Verifocal",
+        "prize":"£49.00",
+        "description":"You need glasses to see things up close and in the distance. Varifocal lenses offer a smooth, continuous vision from distance to intermediate to near vision.",  
+        "image": "assets/verifocal.jpg",
+        "parent": 0,
+        "haschild": true
+    },
+    {
+        "id":6,
+        "name":"Advance Verifocal",
+        "prize":"Free",
+        "description":"You mostly need glasses to see things in the distance, e.g. whilst driving.",  
+        "image": "assets/distance.png",
+        "parent": 5,
+        "haschild": false
+    },
+    {
+        "id":7,
+        "name":"Ultra Verifocal",
+        "prize":"Free",
+        "description":"You mostly need glasses to see things in the distance, e.g. whilst driving.",  
+        "image": "assets/distance.png",
+        "parent": 5,
+        "haschild": false
+    }
+]

@@ -1,0 +1,29 @@
+[
+    {
+        "id":1,
+        "name":"Dark Tints",
+        "prize":"£10.00",
+        "description":" Dark tints block 75% of sunlight and offer 100% UVA/B protection.",  
+        "image": "assets/darktints.png",
+        "parent": 0,
+        "haschild": 0
+    },
+    {
+        "id":2,
+        "name":" Gradient tints",
+        "prize":"£20.00",
+        "description":" Dark at the top and fading to clear at the bottom of the lens, gradient tints are both fashionable and great for driving. Complete with UVA/B blocking filter.",  
+        "image": "assets/gradienttints.png",
+        "parent": 0,
+        "haschild": 0
+    },
+    {
+        "id":3,
+        "name":"Polarised",
+        "prize":"£55.00",
+        "description":" Polarised lenses block 99.7% of reflected glare, enhance contrast and improve visual performance. They are 85% light absorbing and come complete with a UVA/B blocking filter.",  
+        "image": "assets/polarised.png",
+        "parent": 0,
+        "haschild": 0
+    }
+]

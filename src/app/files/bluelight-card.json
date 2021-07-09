@@ -1,0 +1,11 @@
+[
+    {
+        "id":1,
+        "name":" BlueReflect™",
+        "prize":"£40.00",
+        "description":"These lenses use a special protective shield that helps filter out blue light from screens. They also reduce glare and improve contrast for the wearer.",  
+        "image": "assets/bluelightcard.png",
+        "parent": 0,
+        "haschild": 0
+    }
+]

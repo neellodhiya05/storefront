@@ -2,13 +2,18 @@ import { Route } from '@angular/router';
 import { AddLoginPrescriptionComponent } from './core/components/add-login-prescription/add-login-prescription.component';
 import { AddPrescriptionFormComponent } from './core/components/add-prescription-form/add-prescription-form.component';
 import { AddPrescriptionComponent } from './core/components/add-prescription/add-prescription.component';
+import { BluelightCardComponent } from './core/components/bluelight-card/bluelight-card.component';
 import { LensCategoryComponent } from './core/components/lens-category/lens-category.component';
 import { LensPackageComponent } from './core/components/lens-package/lens-package.component';
 import { PrescriptionComponent } from './core/components/prescription/prescription.component';
 
 import { ProductDetailComponent } from './core/components/product-detail/product-detail.component';
 import { ProductListComponent } from './core/components/product-list/product-list.component';
+import { SunglassesCardComponent } from './core/components/sunglasses-card/sunglasses-card.component';
+import { TransitionCardComponent } from './core/components/transition-card/transition-card.component';
+import { VerifocalCardComponent } from './core/components/verifocal-card/verifocal-card.component';
 import { VisonTypeComponent } from './core/vison-type/vison-type.component';
+import { SignInComponent } from './shared/components/sign-in/sign-in.component';
 
 export const routes: Route[] = [
     {
@@ -59,5 +64,25 @@ export const routes: Route[] = [
     {
         path: 'add-login-prescription',
         component:AddLoginPrescriptionComponent,
+    },
+    {
+        path: 'sign-in',
+        component:SignInComponent,
+    },
+    {
+        path: 'verifocal-card',
+        component:VerifocalCardComponent,
+    },
+    {
+        path: 'sunglasses-card',
+        component:SunglassesCardComponent,
+    },
+    {
+        path: 'bluelight-card',
+        component:BluelightCardComponent,
+    },
+    {
+        path: 'transition-card',
+        component:TransitionCardComponent,
     },
 ];

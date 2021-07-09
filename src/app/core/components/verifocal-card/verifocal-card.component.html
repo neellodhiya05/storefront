@@ -5,7 +5,7 @@
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-light">Step 1</h1>
         <h2 class="fw-light">Vison Type</h2>
-        <p class="lead text-muted">How you will use your glasses? Select one option</p>
+        <p class="lead text-muted">What type of varifocals do you need?</p>
        
       </div>
     </div>
@@ -16,7 +16,7 @@
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         
-        <div class="col" *ngFor="let items of visontypedetail">
+        <div class="col" *ngFor="let items of verifocalcard">
          <div *ngIf="(items.parent == 0)">
           <div class="card shadow-sm" >
             <img src={{items.image}} >

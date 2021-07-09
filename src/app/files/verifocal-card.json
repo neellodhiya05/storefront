@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "name":"Varifocal Advanced",
+        "prize":"£49.00",
+        "description":"Advanced lenses utilise Freeform technology to offer an enhanced field of vision at all distances, less distortion at the lens edge, and easy adaption for existing wearers when compared to more basic lenses.",  
+        "image": "assets/verifocal1.png",
+        "parent": 0,
+        "haschild": false
+    },
+    {
+        "id":2,
+        "name":"Varifocal Elite HD",
+        "prize":"£79.00",
+        "description":"Elite varifocal are a more sophisticated Freeform design than our Advanced lenses. They feature a wider field of vision for reading, with significantly less peripheral distortion. Easy for first-time wearers to adapt to, Elite HD offers a 30% improvement in field of vision compared to a conventional lens.",  
+        "image": "assets/verifocal2.png",
+        "parent": 0,
+        "haschild": false
+    },
+    {
+        "id":3,
+        "name":"Varifocal Supreme HD",
+        "prize":"£99.00",
+        "description":"Supreme varifocal lenses use cutting-edge high-definition Digital Ray-Path technology to provide a 20% improved field of vision for intermediate and reading distances compared to the Elite lenses. They are especially good for computer and tablet use, and are our recommended varifocal for all wearers.",
+        "image": "assets/verifocal3.png",
+        "parent": 0,
+        "haschild": false
+
+    }
+]

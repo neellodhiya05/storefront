@@ -1,0 +1,29 @@
+[
+    {
+        "id":1,
+        
+        "prize":"£10.00",
+        "description":" Our fastest reacting Transitions Light Intelligent Lenses automatically adjust from clear to dark depending on the intensity of the sun. They block 100% of UVA/B light, and help protect against harmful blue light from digital devices and the sun.",  
+        "image": "assets/t1.png",
+        "parent": 0,
+        "haschild": 0
+    },
+    {
+        "id":2,
+     
+        "prize":"£20.00",
+        "description":" Transitions XTRActive lenses go extra dark outdoors and also darken when behind car windscreens to protect your eyes while driving. Ideal for the most light-sensitive people, they block 100% of UV light and help protect against harmful blue light.",  
+        "image": "assets/t2.png",
+        "parent": 0,
+        "haschild": 0
+    },
+    {
+        "id":3,
+        
+        "prize":"£55.00",
+        "description":"Transitions XTRActive lenses go extra dark outdoors and also darken when behind car windscreens to protect your eyes while driving. Ideal for the most light-sensitive people, they block 100% of UV light and help protect against harmful blue light.",  
+        "image": "assets/t3.png",
+        "parent": 0,
+        "haschild": 0
+    }
+]

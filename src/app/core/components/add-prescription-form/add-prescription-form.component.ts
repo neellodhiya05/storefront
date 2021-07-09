@@ -1,7 +1,6 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-
-
+import data from '../../../files/nearadddata.json';
 
 @Component({
   selector: 'vsf-add-prescription-form',
@@ -12,8 +11,13 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 export class AddPrescriptionFormComponent implements OnInit {
   form!: FormGroup;
   title = 'json-file-read-angular';
+  
+  public rightnearadd:{id:number,name:string}[] = data
+  public leftnearadd:{id:number,name:string}[] = data
+  
+  selectedIndex: number | undefined;
 
-  selectedIndex: number;
+
   constructor(
     private formBuilder:FormBuilder, 
     ) {}

@@ -37,6 +37,10 @@ import { LensPackageComponent } from './components/lens-package/lens-package.com
 import { AddPrescriptionComponent } from './components/add-prescription/add-prescription.component';
 import { AddPrescriptionFormComponent } from './components/add-prescription-form/add-prescription-form.component';
 import { AddLoginPrescriptionComponent } from './components/add-login-prescription/add-login-prescription.component';
+import { VerifocalCardComponent } from './components/verifocal-card/verifocal-card.component';
+import { BluelightCardComponent } from './components/bluelight-card/bluelight-card.component';
+import { SunglassesCardComponent } from './components/sunglasses-card/sunglasses-card.component';
+import { TransitionCardComponent } from './components/transition-card/transition-card.component';
 
 
 
@@ -72,6 +76,10 @@ let providedCacheState: any | undefined;
         AddPrescriptionComponent,
         AddPrescriptionFormComponent,
         AddLoginPrescriptionComponent,
+        VerifocalCardComponent,
+        BluelightCardComponent,
+        SunglassesCardComponent,
+        TransitionCardComponent,
     
     ],
     imports: [

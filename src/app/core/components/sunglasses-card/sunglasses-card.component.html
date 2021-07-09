@@ -1,11 +1,12 @@
+
 <main>
 
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Step 1</h1>
-        <h2 class="fw-light">Vison Type</h2>
-        <p class="lead text-muted">How you will use your glasses? Select one option</p>
+        <h1 class="fw-light">Step 2</h1>
+        <h2 class="fw-light">Lens Category</h2>
+        <p class="lead text-muted">What type and colour of sunglasses do you need?</p>
        
       </div>
     </div>
@@ -18,15 +19,17 @@
         
         <div class="col" *ngFor="let items of visontypedetail">
          <div *ngIf="(items.parent == 0)">
+         
           <div class="card shadow-sm" >
+          <br><br>
             <img src={{items.image}} >
             <div class="card-body">
             <h1 class="option-value" > 
                 {{items.name}}
             </h1>
             <span class="option-price">
-              <div *ngIf="(items.haschild == false)">
-              <a routerLink="../lens-category">
+              <div *ngIf="(items.haschild == 0)">
+              <a routerLink="../lens-package">
                 {{items.prize}}
               </a>
               </div>

@@ -86,7 +86,9 @@
                 <div class="row">
                      <div class="col" style="font-size:calc(1em + 1vw)">
                          <select formControlName="right_nearadd">
-                            
+                              <option *ngFor="let items of rightnearadd" >
+                                {{items.name}}
+                            </option>
                         </select>
                     </div>
                      <div class="col">  </div>
