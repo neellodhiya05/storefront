@@ -1,0 +1,52 @@
+[
+    {
+        "id":1,
+        "name":" BlueReflect™",
+        "prize":"£40.00",
+        "description1":"These lenses use a special protective shield that helps filter out blue light from screens. They also reduce glare and improve contrast for the wearer.",  
+        "image1": "assets/bluelightcard.png",
+        "description2":"These lenses use a special protective shield that helps filter out blue light from screens. They also reduce glare and improve contrast for the wearer.",  
+        "image2": "assets/bluelightcard.png",
+        "parent": 0,
+        "haschild": 0
+    },
+    {
+        "id":2,
+        "name":" BlueReflect™",
+        "prize":"£40.00",
+        "description1":"These lenses use a special protective shield that helps filter out blue light from screens. They also reduce glare and improve contrast for the wearer.",  
+        "image1": "assets/bluelightcard.png",
+        "description2":"These lenses use a special protective shield that helps filter out blue light from screens. They also reduce glare and improve contrast for the wearer.",  
+        "image2": "assets/bluelightcard.png",
+        "description3":"These lenses use a special protective shield that helps filter out blue light from screens. They also reduce glare and improve contrast for the wearer.",  
+        "image3": "assets/bluelightcard.png",
+        "parent": 0,
+        "haschild": 0
+    },
+    {
+        "id":3,
+        "name":" BlueReflect™",
+        "prize":"£40.00",
+        "description1":"These lenses use a special protective shield that helps filter out blue light from screens. They also reduce glare and improve contrast for the wearer.",  
+        "image1": "assets/bluelightcard.png",
+        "description2":"These lenses use a special protective shield that helps filter out blue light from screens. They also reduce glare and improve contrast for the wearer.",  
+        "image2": "assets/bluelightcard.png",
+        "description3":"These lenses use a special protective shield that helps filter out blue light from screens. They also reduce glare and improve contrast for the wearer.",  
+        "image3": "assets/bluelightcard.png",
+        "description4":"These lenses use a special protective shield that helps filter out blue light from screens. They also reduce glare and improve contrast for the wearer.",  
+        "image4": "assets/bluelightcard.png",
+        "parent": 0,
+        "haschild": 0
+    },
+    {
+        "id":4,
+        "name":" BlueReflect™",
+        "prize":"£40.00",
+        "description1":"These lenses use a special protective shield that helps filter out blue light from screens. They also reduce glare and improve contrast for the wearer.",  
+        "image1": "assets/bluelightcard.png",
+        "description2":"These lenses use a special protective shield that helps filter out blue light from screens. They also reduce glare and improve contrast for the wearer.",  
+        "image2": "assets/bluelightcard.png",
+        "parent": 0,
+        "haschild": 0
+    }
+]

@@ -18,8 +18,9 @@
         
         <div class="col" *ngFor="let items of visontypedetail">
          <div *ngIf="(items.parent == 0)">
+         <br><br>
           <div class="card shadow-sm" >
-            <img src={{items.image}} >
+            <img src={{items.image}} height=150>
             <div class="card-body">
             <h1 class="option-value" > 
                 {{items.name}}

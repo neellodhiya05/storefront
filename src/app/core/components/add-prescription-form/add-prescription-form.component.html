@@ -1,10 +1,20 @@
-<br><br>
+ <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Step 4</h1>
+        <h2 class="fw-light">Prescription</h2>
+        <p class="lead text-muted">Let us know how you want to provide your prescription:</p>
+       
+      </div>
+    </div>
+  </section>
+
     <div class="container">
-    <div class="row">
+    <div class="rows">
         <div class="col">
             <div class="heading" >Enter new prescription</div>
                 <p class="heading2">Enter your prescription below</p>
-                <p style="color:red">All prescriptions will be checked by one of our opticians and verified for any potential errors or delays,and they may contact you if they need to discuss your details any further.
+                <p style="color:black">All prescriptions will be checked by one of our opticians and verified for any potential errors or delays,and they may contact you if they need to discuss your details any further.
             </p>
             <form [formGroup]="form" (submit)="submit()"> 
                 <label class="name">Prescription Name:</label><br>
@@ -17,21 +27,25 @@
                 </div>
                 <hr>
                  <div class="row">
-                     <div class="col" style="font-size:calc(1em + 1vw)">Sphere(SPH)</div>
+                     <div class="col" style="font-size:20px">Sphere(SPH)</div>
                      <div class="col">  </div>
-                     <div class="col"style="font-size:calc(1em + 1vw)">Sphere(SPH)</div>
+                     <div class="col"style="font-size:20px">Sphere(SPH)</div>
                 </div>
 
                   <div class="row">
-                     <div class="col" style="font-size:calc(1em + 1vw)">
+                     <div class="col">
                         <select formControlName="right_sphere">
-                          
+                            <option *ngFor="let items of dataList" >
+                                {{items.name}}
+                            </option>
                         </select>
                      </div>
                      <div class="col">  </div>
-                     <div class="col"style="font-size:calc(1em + 1vw)">
+                     <div class="col">
                         <select formControlName="left_sphere">
-                          
+                            <option *ngFor="let items of leftsphere" >
+                                {{items.name}}
+                            </option>
                         </select>
                      </div>
                 </div>
@@ -41,21 +55,25 @@
 
 
                <div class="row">
-                     <div class="col" style="font-size:calc(1em + 1vw)">Cylinder(CYL)</div>
+                     <div class="col" style="font-size:20px">Cylinder(CYL)</div>
                      <div class="col">  </div>
-                     <div class="col"style="font-size:calc(1em + 1vw)">Cylinder(CYL)</div>
+                     <div class="col"style="font-size:20px">Cylinder(CYL)</div>
                 </div>
                 
                 <div class="row">
-                     <div class="col" style="font-size:calc(1em + 1vw)">
+                     <div class="col" >
                             <select formControlName="right_cylinder">
-                           
+                            <option *ngFor="let items of rightcyl" >
+                                {{items.name}}
+                            </option>
                         </select>
                      </div>
                      <div class="col">  </div>
-                     <div class="col"style="font-size:calc(1em + 1vw)">
+                     <div class="col">
                          <select formControlName="left_cylinder">
-                           
+                            <option *ngFor="let items of leftcyl" >
+                                {{items.name}}
+                            </option>
                         </select>
                      </div>
                 </div>
@@ -63,9 +81,9 @@
              <hr>
 
             <div class="row">
-                 <div class="col" style="font-size:calc(1em + 1vw)" >Axis</div>
+                 <div class="col" style="font-size:20px" >Axis</div>
                  <div class="col">  </div>
-                <div class="col"style="font-size:calc(1em + 1vw)">Axis</div>
+                <div class="col"style="font-size:20px">Axis</div>
              </div>
            
             <div class="row">
@@ -79,22 +97,24 @@
              </div>
             <hr>
                <div class="row">
-                     <div class="col" style="font-size:calc(1em + 1vw)">NEAR ADD</div>
+                     <div class="col" style="font-size:20px">NEAR ADD</div>
                      <div class="col">  </div>
-                     <div class="col"style="font-size:calc(1em + 1vw)">NEAR ADD</div>
+                     <div class="col"style="font-size:20px">NEAR ADD</div>
                 </div>
                 <div class="row">
-                     <div class="col" style="font-size:calc(1em + 1vw)">
+                     <div class="col" >
                          <select formControlName="right_nearadd">
-                              <option *ngFor="let items of rightnearadd" >
+                            <option *ngFor="let items of rightnearadd" >
                                 {{items.name}}
                             </option>
                         </select>
                     </div>
                      <div class="col">  </div>
-                     <div class="col"style="font-size:calc(1em + 1vw)">
+                     <div class="col">
                         <select formControlName="left_nearadd">
-                           
+                            <option *ngFor="let items of leftnearadd" >
+                                {{items.name}}
+                            </option>
                         </select>
                      </div>
                 </div>
@@ -108,7 +128,9 @@
                 <div class="col"></div>
                 <div class="col">
                      <select formControlName="pupil_pre">
-                          
+                            <option *ngFor="let items of pupilpre" >
+                                {{items.name}}
+                            </option>
                         </select>
                 </div>
              </div>
@@ -135,7 +157,7 @@
             <hr>
           
             <div class="heading" >
-                 <button class="btn-btn sucess" type="submit">Add Prescription</button>
+                 <button class="btn-btn sucess" type="submit" >Add Prescription</button>
             </div>
             <hr>
             </form>

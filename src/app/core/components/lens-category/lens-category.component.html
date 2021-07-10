@@ -12,14 +12,15 @@
   </section>
 
   <div class="album py-5 bg-light">
-    <div class="container">
+    <div class="container" >
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" >
         
         <div class="col" *ngFor="let items of lenscategorydetail">
          <div *ngIf="(items.parent == 0)">
+          <br><br>
           <div class="card shadow-sm" >
-            <img src={{items.image}} >
+            <img src={{items.image}} height=150>
             <div class="card-body">
             <h1 class="option-value" > 
                 {{items.name}}
