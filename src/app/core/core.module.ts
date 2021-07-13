@@ -41,6 +41,8 @@ import { VerifocalCardComponent } from './components/verifocal-card/verifocal-ca
 import { BluelightCardComponent } from './components/bluelight-card/bluelight-card.component';
 import { SunglassesCardComponent } from './components/sunglasses-card/sunglasses-card.component';
 import { TransitionCardComponent } from './components/transition-card/transition-card.component';
+import { UploadFileComponent } from './components/upload-file/upload-file.component';
+import { UploadComponent } from './components/upload/upload.component';
 
 
 
@@ -80,6 +82,8 @@ let providedCacheState: any | undefined;
         BluelightCardComponent,
         SunglassesCardComponent,
         TransitionCardComponent,
+        UploadFileComponent,
+        UploadComponent,
     
     ],
     imports: [

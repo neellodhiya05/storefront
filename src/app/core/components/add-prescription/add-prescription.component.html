@@ -12,87 +12,58 @@
   </section>
 
   <div class="album py-5 bg-light">
-    <div class="container">
+    <div class="container" >
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" >
+        
+        <div class="col" *ngFor="let items of lenscategorydetail">
+         <div *ngIf="(items.parent == 0)">
+          <br><br>
+          <div class="card shadow-sm" >
            
             <div class="card-body">
-            <h1 class="option-value" >Send prescription later</h1>
+            <h1 class="option-value" > 
+                {{items.name}}
+            </h1>
+               <div class="option-description"><p>
+                {{items.description1}}              
+              </p></div>
             <span class="option-price">
-              
+              <div *ngIf="(items.haschild == 0)">
+                <button class="btn btn-primary btn-lg" id="select" routerLink="/">{{items.button}}</button>
+              </div>
+              <div *ngIf="(items.haschild == 1)">
+                <!-- Show hidden Child elements of the same parent id on the top of the component in a div-->
+                <button class="btn btn-primary btn-lg" id="select" routerLink="../add-prescription-form">{{items.button}}</button>
+                <!--- -->
+              </div>
+                <div *ngIf="(items.haschild == 2)">
+                <!-- Show hidden Child elements of the same parent id on the top of the component in a div-->
+               <button class="btn btn-primary btn-lg" id="select" routerLink="../sign-in">{{items.button}}</button>
+                <!--- -->
+              </div>
+                <div *ngIf="(items.haschild == 3)">
+                <!-- Show hidden Child elements of the same parent id on the top of the component in a div-->
+              <button class="btn btn-primary btn-lg" id="select" routerLink="../upload-file">{{items.button}}</button>
+                <!--- -->
+              </div>
             </span>
-             <p>Do you still need an eye test or simply don’t have your prescription to hand? Send your prescription later via email, telephone or post.</p>
-              <button class="btn btn-primary btn-lg" id="select" routerLink="/">Select</button>
+           
               <div class="d-flex justify-content-between align-items-center">
                 
               </div>
             </div>
           </div>
+             </div>
         </div>
-        <div class="col">
-          <div class="card shadow-sm">
-           
-
-            <div class="card-body">
-                <h1 class="option-value" >Enter new prescription</h1>
-            <span class="option-price">
-             
-            </span>
-           <p>Enter your prescription here and one of our qualified opticians will check through your details.</p>
-               <button class="btn btn-primary btn-lg" id="select"  routerLink="../add-prescription-form">Select</button>
-              <div class="d-flex justify-content-between align-items-center">
-              
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-         
-
-            <div class="card-body">
-                <h1 class="option-value" >Use saved prescription</h1>
-            <span class="option-price">
-             
-            </span>
-       <p>Purchased from us before? If so, you can use an existing prescription saved to your Account here.</p>
-              <button class="btn btn-primary btn-lg" id="select"routerLink="../sign-in">Select</button> 
-              <div class="d-flex justify-content-between align-items-center">
-             
-              </div>
-            </div>
-          </div>
-          <br><br>
-        </div>
-             <div class="col">
-          <div class="card shadow-sm">
-           
-
-            <div class="card-body">
-                <h1 class="option-value" >Upload Your prescription</h1>
-            <span class="option-price">
-             
-            </span>
-           <p>Upload your prescription here and one of our qualified opticians will check through your details.</p>
-               <button class="btn btn-primary btn-lg" id="select"  routerLink="../add-prescription-form">Select</button>
-              <div class="d-flex justify-content-between align-items-center">
-              
-              </div>
-            </div>
-          </div>
-        </div>
-       
         
-      
-      
 
       
       
       </div>
     </div>
   </div>
+
 
 </main>
 

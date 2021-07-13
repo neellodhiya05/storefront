@@ -88,6 +88,10 @@ export class AddPrescriptionFormComponent implements OnInit {
 
     });
 }
+viewCartFromNotification(closeFn: () => void) {
+  this.stateService.setState('cartDrawerOpen', true);
+  closeFn();
+}
  submit(): void{
    console.log(this.form.getRawValue());
  }
