@@ -1,9 +1,10 @@
 import { Component, OnInit, ChangeDetectionStrategy, TemplateRef } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { AddToCart, GetProductDetail } from 'src/app/common/generated-types';
-import data from "../../../files/data.json"
-import data1 from "../../../files/NearAddData.json"
-import data2 from "../../../files/PupilPreData.json"
+import { AddToCart, GetProductDetail } from '../../../common/generated-types';
+
+import data from '../../../files/data.json';
+import data1 from '../../../files/NearAddData.json';
+import data2 from '../../../files/PupilPreData.json';
 import { DataService } from '../../providers/data/data.service';
 import { NotificationService } from '../../providers/notification/notification.service';
 import { StateService } from '../../providers/state/state.service';
@@ -16,6 +17,10 @@ import { ADD_TO_CART } from '../product-detail/product-detail.graphql';
 })
 export class AddPrescriptionFormComponent implements OnInit {
 
+  product: GetProductDetail.Product;
+    selectedAsset: { id: string; preview: string; };
+    selectedVariant: GetProductDetail.Variants;
+    qty = 1;
   form!: FormGroup;
   title = 'json-file-read-angular';
   
@@ -56,6 +61,7 @@ export class AddPrescriptionFormComponent implements OnInit {
       pupil_pre:'',
       extra_info:''
     });
+    
   }
   addToCart(variant: GetProductDetail.Variants, qty: number) {
     this.dataService.mutate<AddToCart.Mutation, AddToCart.Variables>(ADD_TO_CART, {
@@ -88,10 +94,7 @@ export class AddPrescriptionFormComponent implements OnInit {
 
     });
 }
-viewCartFromNotification(closeFn: () => void) {
-  this.stateService.setState('cartDrawerOpen', true);
-  closeFn();
-}
+  
  submit(): void{
    console.log(this.form.getRawValue());
  }

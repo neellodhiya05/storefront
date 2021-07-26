@@ -16,7 +16,7 @@
                 <p class="heading2">Enter your prescription below</p>
                 <p style="color:black">All prescriptions will be checked by one of our opticians and verified for any potential errors or delays,and they may contact you if they need to discuss your details any further.
             </p>
-            <form [formGroup]="form" (submit)="submit()"> 
+            <form [formGroup]="form" > 
                 <label class="name">Prescription Name:</label><br>
                 <input type="text" id="pre_name" name="pre_name" class="form-control" formControlName="pre_name"><br> 
                 <hr>
@@ -157,7 +157,14 @@
             <hr>
           
             <div class="heading" >
-                 <button class="btn-btn sucess" type="submit" >Add Prescription</button>
+
+                   
+                        
+                          <button class="btn-btn sucess" type="submit" 
+                                class="btn btn-primary btn-lg" 
+                                (click)="addToCart(selectedVariant, qty)">Add Prescription</button>
+                
+               
             </div>
             <hr>
             </form>

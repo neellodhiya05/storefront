@@ -133,7 +133,7 @@ export class ProductListComponent implements OnInit {
                     this.facetValues = data.search.facetValues;
                     this.unfilteredTotalItems = data.search.totalItems;
                 });
-        };
+        }; 
         this.loading$ = merge(
             triggerFetch$.pipe(mapTo(true)),
         );
