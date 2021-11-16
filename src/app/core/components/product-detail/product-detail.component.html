@@ -15,7 +15,7 @@
                     <div class="variant-selector" *ngIf="product.variants.length > 1">
                         <select [(ngModel)]="selectedVariant" class="form-control">
                             <option *ngFor="let variant of product.variants"
-                                    [ngValue]="variant">{{ variant.name }}</option>
+                                    [ngValue]="variant">{{variant.name}}</option>
                         </select>
                     </div>
                     <div class="add-to-cart-row">
@@ -35,9 +35,8 @@
                         </button>
                     </div>
                     <div>
-                      
-                        <button class="btn btn-success btn-lg" (click)="btnClick();">Add Lense</button>
-                     </div>
+                       <button class="btn btn-success btn-lg" (click)="btnClick();">Add Lense</button>
+                    </div>
                        
                 </div>
                 <div class="description" [innerHTML]="product.description">

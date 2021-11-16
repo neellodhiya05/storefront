@@ -5,7 +5,5 @@
     </a>
 </div>
 <ng-template #notLoggedIn>
-    <a class="btn btn-light" [routerLink]="['account/sign-in']">
-        <fa-icon icon="user-circle"></fa-icon>
-        <span class="d-none d-sm-inline ml-1">Sign In</span></a>
+   <div class="g-signin2" data-onsucess="onSignin" data-longtitle="true"></div>
 </ng-template>
